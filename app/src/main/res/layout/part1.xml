@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/vMargin"
+    android:layout_marginTop="@dimen/vMargin"
+    android:layout_marginRight="@dimen/vMargin"
+    android:layout_marginBottom="@dimen/vMargin">
+    <!--
+        TODO: Write the XML necessary to produce the described layout on the spec sheet for Part 1.
+        You should include at least 5 image elements from the drawable folder (either the first five
+        or any particular favorites).
+
+        You should use the "vMargin" constant in the dimens.xml for your margins
+
+        You can reference XML-defined constants (in the values folder) using @(tag name)/(value_name).
+
+        You should only add images, no layout containers
+
+        You should add contentDescriptions
+    -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vMargin"
+        android:layout_marginTop="@dimen/vMargin"
+        android:layout_marginRight="@dimen/vMargin"
+        android:layout_marginBottom="@dimen/vMargin"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        app:srcCompat="@drawable/animal_0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vMargin"
+        android:layout_marginTop="@dimen/vMargin"
+        android:layout_marginRight="@dimen/vMargin"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/animal_1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vMargin"
+        android:layout_marginTop="@dimen/vMargin"
+        android:layout_marginRight="@dimen/vMargin"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/animal_2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vMargin"
+        android:layout_marginTop="@dimen/vMargin"
+        android:layout_marginRight="@dimen/vMargin"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/animal_3" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vMargin"
+        android:layout_marginTop="@dimen/vMargin"
+        android:layout_marginRight="@dimen/vMargin"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/animal_4" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    app:layout_constraintGuide_percent=".5">
+
+    <!--
+    Add two LinearLayouts to use as columns. They should equally divide the horizontal space
+    and vertically contain all of their images (this should handle varying numbers of images).
+    -->
+
+    <LinearLayout
+        android:id="@+id/ImageLineOne"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/vMargin"
+        android:layout_marginTop="@dimen/vMargin"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="@dimen/vMargin"
+        android:adjustViewBounds="true"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ImageLineTwo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/vMargin"
+        android:layout_marginEnd="@dimen/vMargin"
+        android:layout_marginBottom="@dimen/vMargin"
+        android:adjustViewBounds="true"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical|center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintGuide_percent=".5" />
+</android.support.constraint.ConstraintLayout>

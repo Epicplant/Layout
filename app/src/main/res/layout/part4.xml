@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="614dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topNav"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/textScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/topNav"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/mainScroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:background="#0000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/textView8"
+            app:srcCompat="@drawable/discord_hamburger" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/vMargin"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/imageButton7"
+            android:text="#  general"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/imageButton7"
+            app:layout_constraintRight_toLeftOf="@+id/imageButton8" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="@dimen/vMargin"
+            android:layout_toStartOf="@+id/imageButton9"
+            android:background="#0000"
+            app:layout_constraintLeft_toRightOf="@+id/textView8"
+            app:layout_constraintRight_toLeftOf="@+id/imageButton9"
+            app:srcCompat="@drawable/discord_search_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="57dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#0000"
+            android:maxWidth="57dp"
+            app:layout_constraintLeft_toRightOf="@+id/imageButton8"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/discord_people_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainScroll"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_goneMarginRight="@dimen/vMargin">
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="52dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="@dimen/vMargin"
+            android:layout_marginTop="@dimen/vMargin"
+            android:layout_marginRight="@dimen/vMargin"
+            android:adjustViewBounds="true"
+            android:background="#0000"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/imageButton13"
+            app:srcCompat="@drawable/discord_landscape_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="46dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="@dimen/vMargin"
+            android:layout_marginTop="@dimen/vMargin"
+            android:layout_marginRight="@dimen/vMargin"
+            android:layout_marginBottom="@dimen/vMargin"
+            android:layout_toEndOf="@+id/imageButton12"
+            android:adjustViewBounds="true"
+            android:background="#0000"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toRightOf="@+id/imageButton12"
+            app:layout_constraintRight_toLeftOf="@+id/searchBar"
+            app:srcCompat="@drawable/discord_present_icon" />
+
+        <RelativeLayout
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageButton13"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/imageButton13">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="169dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/vMargin"
+                android:layout_marginTop="@dimen/vMargin"
+                android:layout_marginBottom="@dimen/vMargin"
+                android:text="Message #general"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/imageButton14" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/vMargin"
+                android:layout_marginTop="@dimen/vMargin"
+                android:layout_marginRight="@dimen/vMargin"
+                android:layout_marginBottom="@dimen/vMargin"
+                android:adjustViewBounds="true"
+                android:background="#0000"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toRightOf="@id/textView9"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@drawable/discord_smile_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
